@@ -29,7 +29,7 @@ jobs:
         $REGION_NUM
         no
         EOF
-    - name: Target IBM Cloud 
+    - name:  Target IBM Cloud 
       env:
         RESOURSE_ID: ${{ secrets.RESOURSE_ID }}
       run: |
@@ -42,12 +42,4 @@ jobs:
       run: |
         ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
 
-Restart IBM Cloud
 
-##[error]Process completed with exit code 1.
-Run ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
-Invoking 'cf restart ***'...
-
-No org targeted, use 'cf target -o ORG' to target an org.
-FAILED
-##[error]Process completed with exit code 1.
