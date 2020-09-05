@@ -2,7 +2,7 @@ name: IBM Cloud Auto Restart
 
 on:
   push:
-    branches: [ master  ]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
   schedule:
@@ -42,3 +42,12 @@ jobs:
       run: |
         ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
 
+Restart IBM Cloud
+
+##[error]Process completed with exit code 1.
+Run ./IBM_Cloud_CLI/ibmcloud cf restart "$IBM_APP_NAME"
+Invoking 'cf restart ***'...
+
+No org targeted, use 'cf target -o ORG' to target an org.
+FAILED
+##[error]Process completed with exit code 1.
