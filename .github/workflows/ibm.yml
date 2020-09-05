@@ -2,7 +2,7 @@ name: IBM Cloud Auto Restart
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master  ]
   pull_request:
     branches: [ master ]
   schedule:
